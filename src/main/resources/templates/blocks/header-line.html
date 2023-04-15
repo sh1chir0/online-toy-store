@@ -1,0 +1,16 @@
+<div th:fragment="header-line" class='header-line'>
+  <div class='header-logo'>
+    <img src="/img/logo2.png" alt="">
+  </div>
+  <div class='nav'>
+    <a class='nav-item' href="/">ГОЛОВНА</a>
+    <a class='nav-item' href="/master-classes">МАЙСТЕР-КЛАСИ</a>
+    <a class='nav-item' href="/blog">БЛОГ</a>
+    <a class='nav-item' href="/about">ПРО НАС</a>
+  </div>
+  <div class ='icons'>
+    <div class='user'>
+      <a th:href="${user != null ? '/office' : '/login'}"><i class="fa-regular fa-circle-user fa-xl"></i></a>
+    </div>
+  </div>
+</div>
